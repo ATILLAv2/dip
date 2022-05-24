@@ -1,0 +1,261 @@
+body {
+    margin: 0 auto;
+    }
+
+.center {
+    margin: 0 auto;
+    width: 1270px;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    display: block;
+    background-image: url(img/banner.png);
+    top: 0;
+    text-align: right;
+    padding: 13px 0;
+    z-index: 100;
+    }
+.header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+.header_container {
+    width: 1270px;  
+    margin: auto;
+}
+.main {
+    height: 620px;
+    position: relative;
+    overflow: visible;
+    background-color: #f9fbfd;
+    margin-top: 58px;
+    max-height: 650px;
+}
+.main .center {
+    background-image: url(img/scale_1200.webp);
+    height: 620px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main p {
+    margin: 0px;
+}
+.main .slide {
+    position: relative;
+}
+.main .slide p {
+    font-size: 22px;
+    padding-bottom: 35px;
+}
+.main h1 {
+    color: #23075c;
+    font-size: 45px;
+    font-family: 'Acrom';
+    font-weight: 400;
+    line-height: 55px;
+    margin: 0 0px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 280px 20px;
+    padding-top: 211px;
+    padding-left: 252px;
+}
+.price_grid {
+    padding-top: 70px;
+    padding-bottom: 120px;
+    position: relative;
+    overflow: visible;
+    background-color: #f9fbfd;
+}
+
+.price_grid .title {
+    font-size: 40px;
+    text-transform: uppercase;
+    max-height: 1000px;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+}
+
+.price_grid .row {
+    margin-top: 70px;
+    display: flex;
+    }
+.price_grid .row .item {
+    text-align: center;
+    font-size: 14px;
+    width: 25%;
+    display: inline-block;
+    background: #fff;
+    vertical-align: top;
+    position: relative;
+    background: linear-gradient(#093287, #dc8709);
+    margin-right: 15px;
+}
+
+.price_grid .row .item .item_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    font-size: 16px;
+    min-height: 80px;
+    /*---65---*/
+    letter-spacing: 2.88px;
+}
+.price_grid .row .item .price_label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.price_grid .row .item .price_label i {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0 4px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.price_grid .row .item ul {
+    padding: 0;
+    min-height: 160px;
+}
+.price_grid .row .content {
+    padding: 0 28px;
+    padding-top: 70px;
+}
+.price_grid .row .item .btn_simple_rouned {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+label.checkbox {
+    cursor: pointer;
+}
+.request .request_grid_cover {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.request .request_grid_cover form {
+    max-width: 700px;
+}
+
+.request .request_grid_cover .label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #282828;
+    text-transform: uppercase;
+}
+
+.request .request_grid_cover .checkbox_grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.request .request_grid_cover .checkbox_grid>label {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.request .request_grid_cover .bottom_cols {
+    margin-top: 22px;
+}
+
+.request .request_grid_cover .request_col {
+    font-size: 14px;
+    width: 302px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.request .request_grid_cover .request_col.no_deck {
+    display: none;
+}
+
+.request .request_grid_cover .request_col:first-of-type {
+    margin-right: 17px;
+}
+
+.request .request_grid_cover .request_col:nth-of-type(2) {
+    margin-right: 17px;
+}
+
+.request .request_grid_cover .request_col.wide {
+    width: 600px;
+    position: relative;
+}
+
+.request .request_grid_cover .request_col .btn_simple_yellow {
+    width: 380px;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.request .request_grid_cover .request_col input {
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+
+.request .request_grid_cover .request_col .call_us {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    color: #282828;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.request .request_grid_cover .request_col .call_us .phone {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 7px;
+}
+
+.request .request_grid_cover .request_col select {
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Acrom';
+}
+
+.request .request_grid_cover .request_col textarea {
+    width: 100%;
+    height: 157px;
+}
+
+.request .request_grid_cover .request_col label {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #484b4d;
+}
+
+.map {
+    margin: 0 auto;
+    width: 100%;
+}
