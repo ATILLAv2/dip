@@ -101,7 +101,6 @@
             </div>
         </div>
     </div>
-
     <div class="request">
         <div class="center">
             <p class="title">РАСЧЕТ СТОИМОСТИ РЕМОНТА</p>
@@ -113,7 +112,7 @@
             </div>
 
             <div class="request_grid_cover repair_washer">
-                <form method="post">
+                <form action="php/order.php" method="post">
                     <p class="label">Выберите неисправность</p>
                     <div class="checkbox_grid">
                         <label class="checkbox">
@@ -179,8 +178,8 @@
                         </div>
                     </div>
                     <div class="request_col">
-                        <input name="sendingphone" class="phone" type="text" placeholder="Введите номер телефона"
-                            required>
+                        <input name="phoneNumber" class="phone" type="text" placeholder="Введите номер телефона" required>
+                        <input name="fio" type="text" placeholder="Введите имя">
                     </div>
                     <div class="request_col wide">
                         <button type="submit" class="btn btn_simple_yellow">Узнать стоимость ремонта</button>
@@ -189,8 +188,8 @@
                             <div class="phone">+7 (343) 243-57-78</div>
                         </div>
                     </div>
+                </form>
             </div>
-            </form>
         </div>
     </div>
     </div>
