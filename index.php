@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./style.css">
     <script src="js/jquery.js"></script>
     <script src="js/form1.js"></script>
+    <script src="js/tabList.js"></script>
 </head>
 
 <body>
 
     <?php
     $conn = mysqli_connect("chuc.caseum.ru:33333", "st_2_18_28", "63567181", "is_2_18_st28_VKR");
-    
     ?>
     <div class="header">
         <div class="header_container">
@@ -106,51 +106,90 @@
             <p class="title">РАСЧЕТ СТОИМОСТИ РЕМОНТА</p>
 
             <div class="shell_btn_repair">
-                <button class="btn_repair button_washer btn_repair_on">стиральные машины</button>
-                <button class="btn_repair button_dishwasher">посудомоечные машины</button>
-                <button class="btn_repair button_fridge">холодильники</button>
+                <button class="btn_tab button_washer" onclick="openTab(event, 'washer')" id="defaultOpen">стиральные машины</button>
+                <button class="btn_tab button_dishwasher" onclick="openTab(event, 'dishwasher')">посудомоечные машины</button>
+                <button class="btn_tab button_fridge"onclick="openTab(event, 'fridge')">холодильники</button>
             </div>
 
             <div class="request_grid_cover repair_washer">
                 <form action="php/order.php" method="post">
                     <p class="label">Выберите неисправность</p>
-                    <div class="checkbox_grid">
+                    <div class="checkbox_grid" id="washer">
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Не набирается вода">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Не набирается вода">
                             <span>Не набирается вода</span>
                         </label>
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Не включается">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Не включается">
                             <span>Не включается</span>
                         </label>
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Сильно шумит">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Сильно шумит">
                             <span>Сильно шумит</span>
                         </label>
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Не работает слив">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Не работает слив">
                             <span>Не работает слив</span>
                         </label>
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Не крутится барабан">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Не крутится барабан">
                             <span>Не крутится барабан</span>
                         </label>
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Заблокировала люк">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Заблокировала люк">
                             <span>Заблокировала люк</span>
                         </label>
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Течет вода из-под машинки">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Течет вода из-под машинки">
                             <span>Течет вода из-под машинки</span>
                         </label>
                         <label class="checkbox">
-                            <input name="form_2[]" type="checkbox" value="Другая">
+                            <input name="form_1[]" type="checkbox" data-price="100" value="Другая">
                             <span>Другая</span>
                         </label>
                     </div>
+                    <div class="checkbox_grid" id="dishwasher">
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Не набирается вода">
+                            <span>Не набирается вода</span>
+                        </label>
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Не включается">
+                            <span>Не включается</span>
+                        </label>
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Сильно шумит">
+                            <span>Сильно шумит</span>
+                        </label>
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Не работает слив">
+                            <span>Не работает слив</span>
+                        </label>
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Не крутится барабан">
+                            <span>Не крутится барабан</span>
+                        </label>
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Заблокировала люк">
+                            <span>Заблокировала люк</span>
+                        </label>
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Течет вода из-под машинки">
+                            <span>Течет вода из-под машинки</span>
+                        </label>
+                        <label class="checkbox">
+                            <input name="form_2[]" type="checkbox" data-price="100" value="Другая">
+                            <span>Другая</span>
+                        </label>
+                    </div>
+                    <label class="checkbox">
+                        <p>Стоимость ремонта состовляет: <span class="output" type="text" value="0.00"
+                                id="span">0.00</span></p>
+                        <input class="inv_input" name="price" style="display: none;">
+                    </label>
+                    <input type="date" min="2022-05-25" max="2022-09-30" value="" name="date" id="dataToday">
                     <div class="request_col">
                         <div class="select_cover">
-                            <div class="select_cover_arrow"></div>
                             <select name="brand">
                                 <option value="Не выбрано">Выберите бренд</option>
                                 <option value="Aeg">Aeg</option>
@@ -178,14 +217,15 @@
                         </div>
                     </div>
                     <div class="request_col">
-                        <input name="phoneNumber" class="phone" type="text" placeholder="Введите номер телефона" required>
+                        <input name="phoneNumber" class="phone" type="text" placeholder="Введите номер телефона"
+                            required>
                         <input name="fio" type="text" placeholder="Введите имя">
                     </div>
-                    <div class="request_col wide">
-                        <button type="submit" class="btn btn_simple_yellow">Узнать стоимость ремонта</button>
+                    <div class="request_col">
+                        <button type="submit" class="btn btn_simple_yellow">Заказать ремонт на дом</button>
                         <div class="call_us">
                             или позвоните нам
-                            <div class="phone">+7 (343) 243-57-78</div>
+                            <div class="phone">+7 (343) 254-57-78</div>
                         </div>
                     </div>
                 </form>
