@@ -1,5 +1,5 @@
 
-    function openTab(evt, cityName) {
+    function openTab(evt, vid_id) {
 
         var i, checkbox_grid, btn_tab;
     
@@ -13,6 +13,9 @@
             btn_tab[i].className = btn_tab[i].className.replace(" active", "");
         }
     
-        document.getElementById(cityName).style.display = "flex";
+        document.getElementById(vid_id).style.display = "flex";
         evt.currentTarget.className += " active";
     }
+    $(document).ready(function () {
+    document.getElementById("defaultOpen").click();
+    })
