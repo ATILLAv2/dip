@@ -15,22 +15,21 @@
 
 <body>
 
-    <div class="header">
+    <header>
         <div class="header_container">
             <a id="header_logo" href="http://www.aurora-master.site/"><img src="/img/aurora.png" class="logo"></a>
-            <nav><a href="#price_grid">Стоимость ремонта</a> <a href="#header_master">О мастере</a> <a href="#request">Заказать
-                    мастера</a>
-                <a href="#anchor_5">Вопрос-ответ</a>
+            <nav><a href="#price_grid">Стоимость ремонта</a>
+                <a href="#header_master">О мастерах</a>
+                <a href="#request">Заказать мастера</a>
+                <a href="#map_anchor">Где нас найти</a>
             </nav>
         </div>
-    </div>
+    </header>
 
     <div class="main">
         <div class="center">
-            <div class="conteiner">
-                <div class="slide">
-                    <h1>Ремонт бытовой техники <br>по Челябинску</h1>
-                </div>
+            <div class="slide">
+                <h1>Ремонт бытовой техники <br>по Челябинску</h1>
             </div>
         </div>
     </div>
@@ -111,31 +110,33 @@
     </div>
 
     <div class="master" id="header_master">
-        <div class="title">Наша команда</div>
-        <div class="master_list">
-            <div class="master_item">
-                <div class="master_img">
-                    <img src="img/man6.png">
+        <div class="center">
+            <div class="title">Наша команда</div>
+            <div class="master_list">
+                <div class="master_item">
+                    <div class="master_img">
+                        <img src="img/man6.png">
+                    </div>
+                    <h3>Грачев Семён</h3>
+                    <p class="role">Мастер по стиральным машинам</p>
+                    <p>10 лет занимаюсь ремонтом бытовой техники, 7 лет специализируюсь на стиральных машинах.</p>
                 </div>
-                <h3>Грачев Семён</h3>
-                <p class="role">Мастер по стиральным машинам</p>
-                <p>10 лет занимаюсь ремонтом бытовой техники, 7 лет специализируюсь на стиральных машинах.</p>
-            </div>
-            <div class="master_item">
-                <div class="master_img">
-                    <img src="img/man8.png">
+                <div class="master_item">
+                    <div class="master_img">
+                        <img src="img/man8.png">
+                    </div>
+                    <h3>Герасимов Артём</h3>
+                    <p class="role">Мастер по теле-аудиотехнике</p>
+                    <p>6 лет занимаюсь ремонтом бытовой техники, 5 лет специализируюсь на цифровом оборудовании.</p>
                 </div>
-                <h3>Герасимов Артём</h3>
-                <p class="role">Мастер по теле-аудиотехнике</p>
-                <p>6 лет занимаюсь ремонтом бытовой техники, 5 лет специализируюсь на цифровом оборудовании.</p>
-            </div>
-            <div class="master_item">
-                <div class="master_img">
-                    <img src="img/man7.png">
+                <div class="master_item">
+                    <div class="master_img">
+                        <img src="img/man7.png">
+                    </div>
+                    <h3>Андреев Савелий</h3>
+                    <p class="role">Мастер по холодильникам</p>
+                    <p>8 лет занимаюсь ремонтом бытовой техники, 5 лет специализируюсь на холодильниках.</p>
                 </div>
-                <h3>Андреев Савелий</h3>
-                <p class="role">Мастер по холодильникам</p>
-                <p>8 лет занимаюсь ремонтом бытовой техники, 5 лет специализируюсь на холодильниках.</p>
             </div>
         </div>
     </div>
@@ -157,69 +158,69 @@
                     <div class="checkbox_grid" id="washer">
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="100" value="Не набирается вода">
-                            <span>Не набирается вода</span>
+                            <span class="pseudocheckbox">Не набирается вода</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="100" value="Не включается">
-                            <span>Не включается</span>
+                            <span class="pseudocheckbox">Не включается</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="100" value="Сильно шумит">
-                            <span>Сильно шумит</span>
+                            <span class="pseudocheckbox">Сильно шумит</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="100" value="Не работает слив">
-                            <span>Не работает слив</span>
+                            <span class="pseudocheckbox">Не работает слив</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="100" value="Не крутится барабан">
-                            <span>Не крутится барабан</span>
+                            <span class="pseudocheckbox">Не крутится барабан</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="100" value="Заблокировала люк">
-                            <span>Заблокировала люк</span>
+                            <span class="pseudocheckbox">Заблокировала люк</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="100" value="Течет вода из-под машинки">
-                            <span>Течет вода из-под машинки</span>
+                            <span class="pseudocheckbox">Течет вода из-под машинки</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_1[]" type="checkbox" data-price="0" value="Другая" checked>
-                            <span>Другая</span>
+                            <span class="pseudocheckbox">Другая</span>
                         </label>
                     </div>
                     <div class="checkbox_grid" id="dishwasher">
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="100" value="Не греет воду">
-                            <span>Не греет воду</span>
+                            <span class="pseudocheckbox">Не греет воду</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="100" value="Протекает">
-                            <span>Протекает</span>
+                            <span class="pseudocheckbox">Протекает</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="100" value="Отключается">
-                            <span>Отключается</span>
+                            <span class="pseudocheckbox">Отключается</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="100" value="Не сушит">
-                            <span>Не сушит</span>
+                            <span class="pseudocheckbox">Не сушит</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="100" value="Не сушит">
-                            <span>Не сушит</span>
+                            <span class="pseudocheckbox">Не сушит</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="100" value="Не включается">
-                            <span>Не включается</span>
+                            <span class="pseudocheckbox">Не включается</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="100" value=" Не набирает воду">
-                            <span> Не набирает воду</span>
+                            <span class="pseudocheckbox"> Не набирает воду</span>
                         </label>
                         <label class="checkbox">
                             <input name="form_2[]" type="checkbox" data-price="0" value="Другая" checked>
-                            <span>Другая</span>
+                            <span class="pseudocheckbox">Другая</span>
                         </label>
                     </div>
                     <label class="checkbox">
@@ -227,64 +228,17 @@
                                 id="span">0.00</span></p>
                         <input class="inv_input" name="price" style="display: none;">
                     </label>
-                    <input type="date" min="2022-05-30" max="2022-09-30" value="" name="date" id="dataToday">
+                    <input type="date" min="2022-06-01" max="2022-09-30" value="" name="date" id="dataToday">
                     <div class="request_col">
-                        <input name="phoneNumber" class="phone" type="text" placeholder="Введите номер телефона"
-                            required>
-                        <input name="fio" type="text" placeholder="Введите имя">
-                    </div>
-                    <div class="request_col">
+                        <input name="phoneNumber" class="phone text_input" type="text"
+                            placeholder="Введите номер телефона" required>
+                        <input name="fio" class="text_input" type="text" placeholder="Введите имя">
                         <button type="submit" class="btn_sub">Заказать ремонт на дом</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    
-    <!-- <div class="faq">
-        <i class="anchor" id="anchor_5"></i>
-        <div class="center">
-            <p class="title">Вопрос — ответ</p>
-            <div class="faq_cover">
-                <div class="item">
-                    <div class="head">
-                        Какие неисправности можно устранить самостоятельно?
-                    </div>
-                    <div class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus enim tempore ex veniam libero
-                        iusto iste quam a sed, sunt necessitatibus dignissimos perspiciatis molestiae ab ut quasi eaque
-                        expedita, explicabo aspernatur. Quia natus possimus repudiandae quo unde impedit odit
-                        voluptatibus veritatis. Quo ut ad et enim sapiente perferendis laudantium?
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="head">
-                        В каких случаях проводить ремонт нерентабельно, и проще купить новую технику?
-                    </div>
-                    <div class="text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nostrum iure eos accusantium
-                        ullam modi non architecto porro temporibus qui aut, consectetur consequuntur ab molestiae
-                        possimus! Quam aliquid animi dolorem hic maxime libero numquam mollitia architecto, sequi
-                        recusandae harum, illo veritatis similique officia quisquam id odit obcaecati molestiae soluta
-                        dignissimos!
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="head">
-                        Как правильно ухаживать за стиральной машиной?
-                    </div>
-                    <div class="text">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis voluptatem similique
-                            maxime assumenda quaerat sint consequatur cumque nam pariatur atque tenetur optio corrupti
-                            obcaecati omnis dolorum itaque illum voluptatum, quisquam quibusdam modi totam voluptas,
-                            molestiae ea accusantium. Consequuntur, excepturi. Reiciendis omnis vel iste nemo, eum quam
-                            qui! Numquam, laboriosam cupiditate.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <footer>
         <div class="center">
@@ -301,15 +255,19 @@
             </div>
         </div>
     </footer>
-    <div class="map">
+
+    <div class="map" id="map_anchor">
         <div class="center"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43361.046940153225!2d61.35908326168934!3d55.1678002039231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5f2b53dd66171%3A0xbb052e5ce0be2109!2z0KHQtdGA0LLQuNGBLdCm0LXQvdGC0YAgItCQ0LLRgNC-0YDQsCI!5e0!3m2!1sru!2sru!4v1653816058942!5m2!1sru!2sru"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+
     <div id="washer_pop">
-        <p>Поломки стиральных машин в отдельных случаях, например, засор, требуют для ремонта частичной разборки машины. Подобные неисправности стиральных машин чреваты не только ремонтом самого аппарата, а и квартиры этажом ниже. </p>
+        <p>Поломки стиральных машин в отдельных случаях, например, засор, требуют для ремонта частичной разборки машины.
+            Подобные неисправности стиральных машин чреваты не только ремонтом самого аппарата, а и квартиры этажом
+            ниже. </p>
         <span id="myModal__close" class="close">ₓ</span>
     </div>
     <div id="dishwasher_pop">

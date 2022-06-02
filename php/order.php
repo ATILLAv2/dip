@@ -13,10 +13,6 @@
     $phone = $_POST["phoneNumber"];
     $sum = $_POST["price"];
     $date = $_POST["date"];
-    $cur = $_POST["btn_tab active"];
-
-    echo "Отладка: введенны данные: имя - ". $name;
-    echo "телефон - " . $phone . "сумма - " . $sum . "дата - " . $date;
 
     $zak = "INSERT INTO t_Client (fio, phone) VALUES ('$name', '$phone')";
     $conn->query($zak);

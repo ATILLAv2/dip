@@ -16,7 +16,6 @@ $(document).ready(function () {
             processData: false,
 
             success: function (data) {
-                alert(data);
                     event.preventDefault();
                     $('#myOverlay').fadeIn(297, function(){
                       $('#myModal') 
